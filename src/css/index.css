@@ -1,0 +1,23 @@
+/* BASE */
+@import url('./base/common.css');
+@import url('./base/container.css');
+
+/* UTILS */
+@import url('./utils/variables.css');
+@import url('./utils/fonts.css');
+@import url('./utils/visuallyh-hidden.css');
+
+/* LAYOUT */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about-us.css');
+@import url('./layout/offers.css');
+@import url('./layout/job-steps.css');
+@import url('./layout/garanties.css');
+@import url('./layout/contacts.css');
+@import url('./layout/faq.css');
+@import url('./layout/footer.css');
+
+/* MODAL WINDOW */
+@import url(./layout/mobile-menu.css);
+@import url(./layout/scroll-btn.css);

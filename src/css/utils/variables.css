@@ -1,0 +1,7 @@
+:root {
+  --black: #1e1e1e;
+  --dark: #222428; /* For cards and footer */
+  --white: #f8f8f8;
+  --red: #a0291a; /* Accent color */
+  --yellow: #f2b632; /* For running text*/
+}

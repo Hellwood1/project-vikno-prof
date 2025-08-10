@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Fixel';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Fixel'), url(../../fonts/Fixel-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Fixel';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('Fixel'), url(../../fonts/Fixel-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Fixel';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local('Fixel'), url(../../fonts/Fixel-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: local('OpenSans'),
+    url(../../fonts/OpenSansCondensed-SemiBoldItalic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Fixel';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('Fixel'), url(../../fonts/Fixel-Bold.woff2) format('woff2');
+}
