@@ -1,0 +1,232 @@
+.offers-section {
+  margin-bottom: 80px;
+}
+.offers-header {
+  margin-bottom: 40px;
+}
+.offers-section-title {
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.offers-section-subtitle {
+  color: var(--gray);
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.65;
+}
+.offers-nav-content {
+  color: var(--gray);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 23px;
+}
+.offers-nav-content-white {
+  color: var(--white);
+  font-weight: 500;
+}
+.offers-nav-btns button {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 23px;
+  background-color: transparent;
+  border: none;
+}
+.offers-nav-btns button:hover,
+.offers-nav-btns button:focus {
+  background: var(--red);
+}
+.offers-nav-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin-bottom: 40px;
+}
+.offers-card {
+  position: relative;
+  width: 320px;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--white);
+}
+.offers-card-title {
+  color: var(--black);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.23;
+  letter-spacing: -0.52px;
+  padding-top: 18px;
+  padding-left: 18px;
+  margin-bottom: 7px;
+  width: 235px;
+}
+.perekis {
+  width: 250px;
+}
+.offers-card-content {
+  color: #515151;
+  font-family: Fixel;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  padding-left: 18px;
+  margin-bottom: 13px;
+}
+.offers-card-img {
+  width: 302px;
+  height: 197px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  padding: 9px;
+}
+.offers-social-link {
+  position: absolute;
+  top: 18px;
+  right: 21px;
+}
+.offers-social-link svg {
+  fill: var(--dark);
+}
+.offers-social-link svg:hover,
+.offers-social-link svg:focus {
+  stroke: var(--red);
+  fill: var(--red);
+}
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.offers-cards {
+  display: none;
+}
+
+.offers-nav-btns button.active {
+  background-color: var(--red);
+}
+
+@media screen and (min-width: 768px) {
+  .offers-section {
+    margin-bottom: 110px;
+  }
+  .offers-header {
+    margin-bottom: 48px;
+  }
+  .offers-section-title {
+    font-size: 41px;
+    line-height: 1.38;
+    margin-bottom: 12px;
+  }
+  .offers-section-subtitle {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+  .offers-nav-content {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+  .offers-nav-content-white {
+    font-weight: 400;
+  }
+  .offers-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .offers-card {
+    width: 329px;
+    height: 362px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offers-section {
+    margin-bottom: 120px;
+  }
+  .offers-header {
+    margin-bottom: 110px;
+  }
+  .offers-section-title {
+    font-size: 42px;
+  }
+  .offers-section-subtitle {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .offers-desk-position {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offers-nav-content {
+    width: 272px;
+    margin-bottom: 48px;
+  }
+  .offers-nav {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .offers-nav-btns {
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+    padding-left: 8px;
+  }
+
+  .offers-nav-btns::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -8px;
+    bottom: 0;
+    width: 2px; /* тонка сіра лінія для неактивних */
+    height: 218px;
+    background: #ffffff33;
+    transition: all 0.3s;
+  }
+  .offers-nav-btns button {
+    position: relative;
+    padding: 12px 16px 12px 24px;
+    text-align: left;
+    margin-left: 8px;
+  }
+  .offers-nav-btns button.active::before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: -8px;
+    height: 100%;
+    width: 8px;
+    height: 74px;
+    background: var(--red);
+    border-radius: 4px;
+  }
+  .offers-cards {
+    padding-left: 30px;
+  }
+  .offers-card {
+    width: 315px;
+    height: 362px;
+  }
+}
