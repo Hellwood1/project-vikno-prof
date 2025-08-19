@@ -4,26 +4,46 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
-export default defineConfig(({ command }) => ({
-  define: { [command === 'serve' ? 'global' : '_global']: {} },
-  root: 'src',
-  base: '/project-vikno-prof/',     // ← правильно
-  build: {
-    sourcemap: true,
-    outDir: '../docs',              // ← було ../dist, ставимо docs
-    emptyOutDir: true,
-    rollupOptions: {
-      input: glob.sync('./src/*.html'),
-      output: {
-        manualChunks(id) { if (id.includes('node_modules')) return 'vendor'; },
-        entryFileNames: ci => (ci.name === 'commonHelpers' ? 'commonHelpers.js' : '[name].js'),
-        assetFileNames: ai => (ai.name && ai.name.endsWith('.html') ? '[name].[ext]' : 'assets/[name]-[hash][extname]'),
-      },
+export default defineConfig(({ command }) => {
+  return {
+    define: {
+      [command === 'serve' ? 'global' : '_global']: {},
     },
-  },
-  plugins: [
-    injectHTML(),
-    FullReload(['./src/**/**.html']),
-    SortCss({ sort: 'mobile-first' }),
-  ],
-}));
+    root: 'src',
+    base: '/',
+    build: {
+      sourcemap: true,
+      rollupOptions: {
+        input: glob.sync('./src/*.html'),
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          },
+          entryFileNames: chunkInfo => {
+            if (chunkInfo.name === 'commonHelpers') {
+              return 'commonHelpers.js';
+            }
+            return '[name].js';
+          },
+          assetFileNames: assetInfo => {
+            if (assetInfo.name && assetInfo.name.endsWith('.html')) {
+              return '[name].[ext]';
+            }
+            return 'assets/[name]-[hash][extname]';
+          },
+        },
+      },
+      outDir: '../dist',
+      emptyOutDir: true,
+    },
+    plugins: [
+      injectHTML(),
+      FullReload(['./src/**/**.html']),
+      SortCss({
+        sort: 'mobile-first',
+      }),
+    ],
+  };
+});
