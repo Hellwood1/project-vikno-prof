@@ -1,4 +1,7 @@
-html {
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 }
 
@@ -6,7 +9,7 @@ body {
   font-family: 'Fixel', sans-serif;
   font-size: 18px;
   font-weight: 400;
-
+  overflow-x: hidden;
   color: var(--white);
   background-color: var(--black);
 }
@@ -20,6 +23,7 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-style: normal;
 }
 
 ul,
@@ -51,6 +55,7 @@ input {
 
 a {
   color: inherit;
+  font-style: normal;
   text-decoration: none;
 }
 

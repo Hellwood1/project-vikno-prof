@@ -1,0 +1,288 @@
+.hero-section-wrapper {
+  border-radius: 0 0 40px 40px;
+  padding-bottom: 34px;
+}
+
+.hero-gradient {
+  border-radius: 0 0 40px 40px;
+  background: linear-gradient(
+    180deg,
+    #5a93ee 0.03%,
+    rgba(245, 207, 105, 0.8) 65.85%,
+    #f2b632 81.79%
+  );
+  background-repeat: no-repeat;
+  height: 500px;
+  padding-top: 72px;
+  margin-bottom: 30px;
+}
+
+.hero-title {
+  font-size: 27px;
+  width: 337px;
+  line-height: normal;
+  align-self: stretch;
+  margin-bottom: 24px;
+}
+
+.hero-svg {
+  fill: var(--black);
+  stroke: var(black);
+}
+
+.hero-text {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 40px;
+}
+
+.hero-tg-link {
+  height: 53px;
+  width: 312px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 106px auto;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.16px;
+
+  background-image: url('../../img/sprite/bg-btn.svg');
+}
+
+.hero-link-text-container {
+  padding-left: 20px;
+}
+
+.hero-link-thirth-element {
+  fill: var(--white);
+  padding-right: 14px;
+}
+
+.hero-tg-icon {
+  padding-right: 14px;
+}
+
+.hero-link-first-element {
+  padding: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.hero-cards {
+  width: 200px;
+  height: 236px;
+  background-image: url('../../img/hero-section/wallpeper.svg');
+}
+
+.hero-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-cards-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--yellow);
+  font-size: 20px;
+  font-weight: 600;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  background-color: var(--white);
+
+  margin-left: 160px;
+}
+
+.hero-cards-first-text,
+.hero-cards-second-text,
+.hero-cards-thirth-text {
+  color: var(--black);
+  font-size: 18px;
+  width: 161px;
+}
+
+.hero-cards-first-text {
+  padding: 26px 0 0 23px;
+}
+
+.hero-cards-second-text {
+  padding: 18px 0 0 23px;
+}
+
+.hero-cards-thirth-text {
+  padding: 36px 0 0 23px;
+}
+
+.icon-star-svg {
+  fill: var(--yellow);
+}
+
+.hero-swiper li {
+  width: 210px;
+}
+
+.icon-heart-svg {
+  margin-left: 70px;
+}
+
+.icon-star-svg {
+  margin-left: 80px;
+}
+
+.video-container {
+  display: none;
+}
+
+/* TABLET*/
+
+@media screen and (min-width: 768px) {
+  .hero-gradient {
+    padding-top: 120px;
+    height: 800px;
+  }
+
+  .hero-title {
+    font-size: 34px;
+    width: 668px;
+    margin-bottom: 12px;
+  }
+
+  .hero-svg {
+    display: none;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    line-height: 1.88;
+    margin-bottom: 0;
+  }
+
+  .hero-second-text {
+    margin-bottom: 36px;
+  }
+
+  .hero-tg-link {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.18px;
+
+    margin: 0 0 108px 0;
+  }
+
+  .hero-link-text-container {
+    padding-left: 20px;
+  }
+
+  .hero-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-swiper li {
+    width: 216px;
+  }
+
+  .hero-cards-number {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    margin-left: 162px;
+  }
+
+  .video-container {
+    display: none;
+  }
+}
+
+/* ======================DESKTOP 1440px================ */
+
+@media screen and (min-width: 1440px) {
+  .hero-gradient {
+    width: 800px;
+    height: 735px;
+
+    border-radius: 50px;
+    padding-top: 70px;
+  }
+
+  .container-part-two {
+    display: flex;
+    column-gap: 24px;
+    padding: 0 30px 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title {
+    font-size: 34px;
+    font-weight: 700px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 664px;
+    margin-bottom: 12px;
+  }
+
+  .hero-tg-link {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.18px;
+
+    margin: 0 0 74px 0;
+  }
+
+  .hero-tg-link:hover .hero-link-thirth-element,
+  .hero-tg-link:focus .hero-link-thirth-element {
+    fill: var(--red);
+  }
+
+  .hero-cards {
+    width: 216px;
+    height: 255px;
+    background-image: url('../../img/hero-section/wallpeper.svg');
+    background-repeat: no-repeat;
+  }
+
+  .hero-cards-number {
+    font-size: 20px;
+    width: 34px;
+    height: 34px;
+    margin-left: 152px;
+  }
+
+  .hero-section-wrapper {
+    display: flex;
+  }
+
+  .video-container {
+    display: flex;
+    width: 620px;
+    height: 810px;
+    border-radius: 48px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .hero-swiper {
+    display: flex;
+    justify-content: center;
+    column-gap: 26px;
+    align-items: center;
+  }
+
+  .gif-desktop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+}
