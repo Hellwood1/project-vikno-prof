@@ -1,15 +1,15 @@
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* MOBILE */
 @media screen and (min-width: 360px) {
   .container {
     max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
