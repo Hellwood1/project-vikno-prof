@@ -1,0 +1,107 @@
+.header-section-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-gradient {
+  background: linear-gradient(180deg, #5a93ee 0.03%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-section-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation,
+.phone-link {
+  display: none;
+}
+
+.mobile-menu-open-btn {
+  background: transparent;
+  border: None;
+}
+
+/* ================================= TABLET ================================= */
+
+@media screen and (min-width: 768px) {
+  .header-section-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-header {
+    padding-right: 150px;
+  }
+
+  .phone-number {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.75;
+    padding-left: 16px;
+  }
+
+  .phone-icon {
+    fill: #a0291a;
+  }
+
+  .phone-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ================================= DESKTOP ================================= */
+
+@media screen and (min-width: 1440px) {
+  .header-gradient {
+    background: none;
+  }
+
+  .logo {
+    width: 178px;
+    height: 48px;
+  }
+
+  .logo-header {
+    padding-right: 0px;
+  }
+
+  .header-navigation {
+    display: flex;
+  }
+
+  .header-nav-list {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .header-nav-list-item-link {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
+  .header-nav-list-item-link:hover,
+  .header-nav-list-item-link:focus {
+    border-radius: 24px;
+    background-color: var(--red);
+  }
+
+  .phone-link:hover .phone-icon,
+  .phone-link:focus .phone-icon {
+    fill: var(--yellow);
+  }
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
+}
