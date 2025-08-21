@@ -1,0 +1,264 @@
+.job-steps-section-wrapper {
+  margin-bottom: 118px;
+}
+
+.job-section-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.job-section-text {
+  font-size: 17px;
+  color: var(--gray);
+  text-align: center;
+  line-height: 1.64;
+  margin-bottom: 40px;
+}
+
+.job-section-list {
+  margin-bottom: 30px;
+}
+
+.job-section-list,
+.job-section-list-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.job-section-list-item-wrapper {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  background-color: var(--red);
+}
+
+.job-section-list-item-title {
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: -0.48px;
+  margin-bottom: 18px;
+}
+
+.job-section-list-item-text,
+.job-section-list-item-second-text,
+.job-section-list-item-thirth-text {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.job-section-list-item-second-text,
+.job-section-list-item-thirth-text {
+  font-weight: 500;
+  margin-top: 18px;
+}
+
+.job-steps-second-card {
+  height: 556px;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.job-steps-link-text {
+  color: var(--white);
+}
+
+.job-section-list-item-thirth-text {
+  font-size: 18px;
+}
+
+.job-section-list-item-list {
+  font-size: 16px;
+  padding-left: 25px;
+  list-style-type: disc;
+  font-weight: 700;
+}
+
+.job-steps-telegram-link {
+  height: 53px;
+  width: 312px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 32px;
+  column-gap: 84px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.16px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/sprite/bg-btn.svg');
+}
+
+.job-steps-svg-wrapper {
+  fill: var(--white);
+}
+
+/* Позиционування та блок відео */
+
+.job-steps-video-container {
+  display: flex;
+  width: 321px;
+  height: 478px;
+  border-radius: 24px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.job-steps-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.job-section-list-item {
+  position: sticky;
+  top: var(--stick-top);
+}
+
+.job-steps-svg-star-wrapper {
+  display: none;
+}
+
+/* TABLET*/
+
+@media screen and (min-width: 768px) {
+  .job-section-title {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+
+  .job-section-text {
+    font-size: 18px;
+    line-height: 1.55;
+    margin-bottom: 48px;
+  }
+
+  .job-steps-content-wrapper {
+    display: flex;
+    column-gap: 20px;
+    flex-direction: row-reverse;
+  }
+
+  .job-section-list {
+    row-gap: 32px;
+    margin-bottom: 0px;
+  }
+
+  .job-section-list-item-wrapper {
+    width: 280px;
+    height: 467px;
+    padding: 16px 24px 16px 24px;
+  }
+
+  .job-steps-second-card {
+    height: 556px;
+  }
+
+  .job-steps-thirth-card {
+    height: 500px;
+    padding: 24px;
+  }
+
+  .job-section-list-item-thirth-text {
+    line-height: 1.55;
+  }
+
+  .job-steps-link-text {
+    padding-left: 20px;
+  }
+
+  .job-steps-svg-wrapper {
+    padding-right: 10px;
+  }
+}
+
+/* Блок відео */
+
+.job-steps-video-container {
+  width: 330px;
+  height: 499px;
+}
+
+/* ======================DESKTOP 1440px================ */
+
+@media screen and (min-width: 1440px) {
+  .job-steps-video-container {
+    width: 560px;
+    height: 700px;
+  }
+
+  .job-steps-content-wrapper {
+    column-gap: 86px;
+  }
+
+  .job-section-list {
+    row-gap: 40px;
+  }
+
+  .job-section-text {
+    margin-bottom: 80px;
+  }
+
+  .job-section-list-item-wrapper {
+    width: 685px;
+    height: 345px;
+    padding: 24px;
+    align-items: flex-start;
+  }
+
+  .job-section-list-item-title {
+    font-size: 26px;
+    text-align: left;
+    line-height: 1.23;
+    letter-spacing: -0.52px;
+  }
+
+  .job-section-list-item-text,
+  .job-section-list-item-second-text,
+  .job-section-list-item-thirth-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .job-section-list-item-list {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .job-section-list-item-second-text {
+    display: flex;
+    column-gap: 19px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .job-steps-svg-star-wrapper {
+    display: block;
+  }
+
+  .job-steps-svg-star-wrapper {
+    fill: var(--yellow);
+  }
+
+  .job-steps-telegram-link {
+    font-size: 18px;
+    column-gap: 64px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    margin: 54px auto 0px auto;
+  }
+
+  .job-steps-telegram-link:hover .job-steps-svg-wrapper,
+  .job-steps-telegram-link:focus .job-steps-svg-wrapper {
+    fill: var(--red);
+  }
+}

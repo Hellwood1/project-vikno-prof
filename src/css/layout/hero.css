@@ -1,6 +1,6 @@
 .hero-section-wrapper {
   border-radius: 0 0 40px 40px;
-  padding-bottom: 34px;
+  margin-bottom: 350px;
 }
 
 .hero-gradient {
@@ -144,6 +144,10 @@
 /* TABLET*/
 
 @media screen and (min-width: 768px) {
+  .hero-section-wrapper {
+    margin-bottom: 110px;
+  }
+
   .hero-gradient {
     padding-top: 120px;
     height: 800px;
