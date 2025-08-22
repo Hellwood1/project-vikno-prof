@@ -1,0 +1,223 @@
+.footer-section-wrapper {
+  position: relative;
+  padding: 40px 0;
+  background: #222428;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+.footer-nav-list-link {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-social-media-list {
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 42px;
+  margin: 0 auto 24px auto;
+}
+
+.footer-social-media-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social-media-link {
+  text-align: center;
+}
+
+.footer-menu-icons {
+  width: 28px;
+  height: 28px;
+  fill: white;
+  background-color: var(--white);
+  padding: 12px;
+  border-radius: 48px;
+
+  margin-bottom: 13px;
+}
+
+.footer-menu-icons {
+  fill: var(--red);
+}
+
+.footer-link-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.footer-vebstudio-link-list {
+  margin-bottom: 44px;
+}
+
+.footer-vebstudio-links {
+  text-align: center;
+  display: flex;
+  column-gap: 6px;
+  justify-content: center;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.footer-vebstudio-links:hover .footer-link-container,
+.footer-vebstudio-links:focus .footer-link-container {
+  color: var(--red);
+}
+
+.licenses-text {
+  font-size: 12px;
+  text-align: center;
+
+  font-weight: 300;
+}
+
+/* Кнопка до гори */
+
+.footer-circle-btn {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  margin: 0 auto 24px auto;
+}
+
+.footer-circle-btn-arrow {
+  width: 12px;
+  height: 16px;
+  position: absolute;
+  z-index: 2;
+}
+
+.footer-text-circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+  transition: transform 4s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer-circle-btn:hover .footer-text-circle,
+.footer-circle-btn:focus .footer-text-circle {
+  animation: spin 6s linear infinite;
+}
+
+/* TABLET*/
+
+@media screen and (min-width: 768px) {
+  .footer-nav-wrapper {
+    display: flex;
+  }
+
+  .footer-nav-list {
+    margin: 0 auto 40px auto;
+  }
+
+  .footer-social-media-list {
+    width: 620px;
+    justify-content: center;
+    gap: 42px;
+    margin: 0 auto 34px auto;
+  }
+
+  .footer-social-media-list-item {
+    width: 160px;
+  }
+
+  .footer-menu-icons {
+    width: 38px;
+    height: 38px;
+    background-color: var(--white);
+    padding: 12px;
+    border-radius: 48px;
+  }
+
+  .footer-link-text {
+    font-size: 16px;
+
+    font-weight: 500;
+    line-height: 1.7;
+  }
+
+  .footer-vebstudio-link-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .footer-vebstudio-links {
+    font-weight: 400;
+    line-height: 1.75;
+  }
+}
+
+/* ======================DESKTOP 1440px================ */
+
+@media screen and (min-width: 1440px) {
+  .footer-nav-list {
+    column-gap: 100px;
+  }
+
+  .footer-social-media-list {
+    column-gap: 62px;
+  }
+
+  .footer-btn-wrapper {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+  }
+
+  .footer-nav-list-link {
+    padding: 10px;
+  }
+
+  .footer-nav-list-link:hover,
+  .footer-nav-list-link:focus {
+    border-radius: 24px;
+    background-color: var(--red);
+  }
+
+  .footer-social-media-list-item .footer-social-media-link .footer-menu-icons {
+    transition: transform 0.5s ease;
+  }
+
+  .footer-social-media-list-item:hover
+    .footer-social-media-link
+    .footer-menu-icons,
+  .footer-social-media-list-item:focus
+    .footer-social-media-link
+    .footer-menu-icons {
+    fill: var(--white);
+    background-color: var(--red);
+    transform: scale(1.1);
+  }
+}

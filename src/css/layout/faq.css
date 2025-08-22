@@ -97,7 +97,9 @@
 .ac-panel {
   overflow: hidden;
   padding: 0 32px;
-  transition: height 0.6s ease, padding 0.6s ease;
+  transition:
+    height 0.6s ease,
+    padding 0.6s ease;
 }
 
 .ac.is-active .ac-panel {
@@ -116,7 +118,7 @@
 
 @media screen and (min-width: 768px) {
   .faq-section {
-    margin-bottom: 110px;
+    margin-bottom: 90px;
   }
   .faq-title {
     margin-bottom: 12px;

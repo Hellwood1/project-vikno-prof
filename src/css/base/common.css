@@ -50,6 +50,7 @@ button {
   color: currentColor;
   padding: 0;
   line-height: 0;
+  outline: none;
 }
 
 input {
@@ -60,6 +61,7 @@ a {
   color: inherit;
   font-style: normal;
   text-decoration: none;
+  outline: none;
 }
 
 .accent-color {

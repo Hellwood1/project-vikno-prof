@@ -19,6 +19,7 @@
 .red-star-svg-contact {
   width: 35px;
   height: 35px;
+  fill: var(--red);
   stroke: var(--red);
 }
 .contact-title {
