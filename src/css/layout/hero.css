@@ -27,7 +27,7 @@
 
 .hero-svg {
   fill: var(--black);
-  stroke: var(black);
+  stroke: var(--black);
 }
 
 .hero-text {

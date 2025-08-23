@@ -95,11 +95,12 @@
   margin-bottom: 13px;
 }
 .offers-card-img {
-  width: 302px;
-  height: 197px;
-  flex-shrink: 0;
+  display: flex;
+  width: 298px;
+  height: 198px;
   border-radius: 24px;
-  padding: 9px;
+  padding: 8px;
+  margin: 0 auto;
 }
 .offers-social-link {
   position: absolute;

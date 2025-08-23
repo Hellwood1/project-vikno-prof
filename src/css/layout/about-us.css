@@ -47,7 +47,7 @@
 }
 .about-us-workers-foto picture img {
   width: 320px;
-  height: 439px;
+  height: 410px;
   aspect-ratio: 78/107;
   border-radius: 28.5px;
   clip-path: inset(1.5px);
@@ -178,8 +178,7 @@
   }
   .about-us-workers-foto picture img {
     width: 329px;
-    height: 441px;
-    flex-shrink: 0;
+    height: 420px;
     aspect-ratio: 47/63;
     border-radius: 28.5px;
     clip-path: inset(1.5px);
@@ -234,7 +233,6 @@
   .about-card-photo picture img {
     width: 690px;
     height: 272.991px;
-    flex-shrink: 0;
     aspect-ratio: 230/91;
   }
   .about-card-24h {
@@ -296,7 +294,7 @@
 
   .about-us-workers-foto picture img {
     width: 310px;
-    height: 425px;
+    height: 416px;
     flex-shrink: 0;
     aspect-ratio: 62/85;
   }
