@@ -47,10 +47,12 @@
   border-radius: 23px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .offers-nav-btns button:hover,
 .offers-nav-btns button:focus {
   background: var(--red);
+  transition: all 0.3s ease;
 }
 .offers-nav-btns {
   display: flex;
@@ -108,19 +110,24 @@
 .offers-social-link svg {
   fill: var(--dark);
 }
-.offers-social-link svg:hover,
-.offers-social-link svg:focus {
+.offers-social-link:hover svg,
+.offers-social-link:focus svg {
   stroke: var(--red);
   fill: var(--red);
-}
-.offers-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  transition: all 0.3s ease;
 }
 
 .offers-cards {
   display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.offers-cards.active {
+  display: flex;
+  opacity: 1;
 }
 
 .offers-nav-btns button.active {
@@ -129,6 +136,7 @@
 
 @media screen and (min-width: 768px) {
   .offers-section {
+    min-width: 768px;
     margin-bottom: 110px;
   }
   .offers-header {
@@ -151,13 +159,16 @@
     font-weight: 400;
   }
   .offers-cards {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .offers-card {
     width: 329px;
     height: 362px;
+  }
+  .offers-card-img {
+    width: 313px;
+    height: 203px;
   }
 }
 
@@ -201,7 +212,7 @@
     left: 0;
     top: -8px;
     bottom: 0;
-    width: 2px; /* тонка сіра лінія для неактивних */
+    width: 2px;
     height: 218px;
     background: #ffffff33;
     transition: all 0.3s;
@@ -217,9 +228,8 @@
     position: absolute;
     left: -19px;
     top: -8px;
-    height: 100%;
-    width: 8px;
     height: 74px;
+    width: 8px;
     background: var(--red);
     border-radius: 4px;
   }
@@ -229,5 +239,8 @@
   .offers-card {
     width: 315px;
     height: 362px;
+  }
+  .offers-card-img {
+    width: 300px;
   }
 }

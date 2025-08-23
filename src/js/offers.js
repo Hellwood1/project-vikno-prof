@@ -3,8 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardsBlocks = document.querySelectorAll('.offers-cards');
 
   function showCards(targetClass) {
-    cardsBlocks.forEach(block => block.style.display = 'none');
-    document.querySelector(`.${targetClass}`).style.display = 'flex';
+    cardsBlocks.forEach(block => {
+      block.classList.remove('active');
+      block.style.display = 'none';
+    });
+
+    const target = document.querySelector(`.${targetClass}`);
+    target.style.display = 'flex';
+
+    setTimeout(() => target.classList.add('active'), 10);
 
     buttons.forEach(btn => btn.classList.remove('active'));
     document.querySelector(`.${targetClass.split('-')[0]}-btn`).classList.add('active');
