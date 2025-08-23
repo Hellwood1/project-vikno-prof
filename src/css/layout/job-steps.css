@@ -76,7 +76,8 @@
   font-size: 16px;
   padding-left: 25px;
   list-style-type: disc;
-  font-weight: 700;
+  font-weight: 400;
+  margin-bottom: 12px;
 }
 
 .job-steps-telegram-link {
@@ -158,6 +159,11 @@
     padding: 16px 24px 16px 24px;
   }
 
+  .job-section-list-item-list {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
   .job-steps-second-card {
     height: 556px;
   }
@@ -229,9 +235,8 @@
   }
 
   .job-section-list-item-list {
-    font-size: 20px;
-    font-weight: 500;
     line-height: 1.4;
+    margin-bottom: 20px;
   }
 
   .job-section-list-item-second-text {

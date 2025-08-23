@@ -1,6 +1,7 @@
 .contact-section {
   margin-bottom: 94px;
 }
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -302,17 +303,17 @@
   }
   .contact-title {
     font-size: 42px;
-    line-height: 1.38; /* 138.095% */
+    line-height: 1.38;
   }
   .title-row {
     margin-top: 56px;
     margin-bottom: 12px;
   }
   .working-hours-text-2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .working-hours-text-3 {
-    font-size: 18px;
+    font-size: 20px;
     width: 524px;
   }
   .contact-desk-position {
