@@ -98,9 +98,37 @@
   height: 48px;
   fill: var(--black);
 }
-.messenger-svg:hover,
+/* .messenger-svg:hover,
 .messenger-svg:focus {
   fill: var(--red);
+} */
+
+.phone-btn,
+.tg-btn,
+.viber-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.phone-btn:hover svg,
+.phone-btn:focus-within svg,
+.tg-btn:hover svg,
+.tg-btn:focus-within svg,
+.viber-btn:hover svg,
+.viber-btn:focus-within svg {
+  fill: var(--red);
+  transition: all 0.3s ease;
+}
+
+.phone-btn:hover .phone-text,
+.phone-btn:focus-within .phone-text,
+.tg-btn:hover .messenger-text,
+.tg-btn:focus-within .messenger-text,
+.viber-btn:hover .messenger-text,
+.viber-btn:focus-within .messenger-text {
+  color: var(--red);
+  transition: all 0.3s ease;
 }
 .contact-desk-position {
   margin-left: auto;
