@@ -234,7 +234,7 @@
 
 @media screen and (min-width: 1440px) {
   .hero-gradient {
-    width: 792px;
+    width: 790px;
     height: 708px;
 
     border-radius: 33px;
@@ -316,7 +316,7 @@
 
   .hero-background {
     height: 778px;
-    width: 662px;
+    width: 570px;
     border-radius: 24px;
     background-repeat: no-repeat;
     background-size: cover;
