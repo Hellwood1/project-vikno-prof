@@ -4,8 +4,8 @@
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 
-  --stick-top: 0vh;
-  --row-h: 200vh; /* висота рядка = тривалість «прилипання» */
+  --stick-top: 10px;
+  --peek: 70px;
 }
 
 body {

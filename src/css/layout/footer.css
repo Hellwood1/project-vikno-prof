@@ -170,7 +170,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    row-gap: 16px;
     margin-bottom: 30px;
   }
 

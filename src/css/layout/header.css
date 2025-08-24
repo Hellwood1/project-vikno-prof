@@ -3,12 +3,6 @@
   padding-bottom: 16px;
 }
 
-.header-gradient {
-  background: linear-gradient(180deg, #5a93ee 0.03%);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .header-section-container {
   display: flex;
   justify-content: space-between;
@@ -61,10 +55,6 @@
 /* ================================= DESKTOP ================================= */
 
 @media screen and (min-width: 1440px) {
-  .header-gradient {
-    background: none;
-  }
-
   .logo {
     width: 178px;
     height: 48px;
