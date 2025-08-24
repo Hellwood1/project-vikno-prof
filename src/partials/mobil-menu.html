@@ -2,9 +2,18 @@
   <button
     class="mobile-menu-close-btn"
     type="button"
-    ria-label="Кнопка для закриття мобільного меню."
+    aria-label="Закрити мобільне меню"
+    aria-controls="mobile-menu"
+    aria-expanded="true"
   >
-    <svg class="phone-icon" width="18" height="18">
+    >
+    <svg
+      class="phone-icon"
+      width="18"
+      height="18"
+      aria-hidden="true"
+      focusable="false"
+    >
       <use href="./img/sprite/sprite-two.svg#close-btn-icon"></use>
     </svg>
   </button>

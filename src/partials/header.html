@@ -1,7 +1,10 @@
 <header class="header-section">
   <div class="container header-section-contaier" id="top">
     <div class="header-section-container">
-      <a class="logo-header" href="./index.html"
+      <a
+        class="logo-header"
+        href="./index.html"
+        aria-label="Вікно PROF — на головну"
         ><svg
           class="logo"
           width="142"
@@ -45,9 +48,18 @@
       <button
         class="mobile-menu-open-btn"
         type="button"
-        aria-label="Кнопка для відкриття мобільного меню."
+        aria-label="Відкрити мобільне меню"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
       >
-        <svg class="mobile-menu-icon" width="38" height="38">
+        >
+        <svg
+          class="mobile-menu-icon"
+          width="38"
+          height="38"
+          aria-hidden="true"
+          focusable="false"
+        >
           <use href="./img/sprite/sprite-two.svg#mobile-menu-icon"></use>
         </svg>
       </button>
