@@ -1,6 +1,6 @@
 <footer class="footer-section-wrapper">
   <div class="container">
-    <nav class="footer-nav-wrapper">
+    <nav class="footer-nav-wrapper" aria-label="Навігація по веб сторінці.">
       <ul class="footer-nav-list">
         <li class="footer-nav-list-item">
           <a class="footer-nav-list-link" href="#about-us">Про нас </a>
@@ -36,6 +36,7 @@
           <a
             class="footer-social-media-link"
             href="https://t.me/+380985353322"
+            rel="noopener noreferrer"
             target="_blank"
             aria-label="Посилання на Телеграм"
             ><svg class="footer-menu-icons" width="18" height="18">
@@ -61,10 +62,20 @@
     </address>
     <div class="footer-btn-wrapper">
       <a href="#top" rel="noopener noreferrer" class="footer-circle-btn">
-        <svg class="footer-circle-btn-arrow" role="img" aria-label="Arrow">
+        <svg
+          class="footer-circle-btn-arrow"
+          role="img"
+          aria-hidden="true"
+          focusable="false"
+        >
           <use href="./img/sprite.svg#icon-footer-arrow"></use>
         </svg>
-        <svg class="footer-text-circle" viewBox="0 0 100 100">
+        <svg
+          class="footer-text-circle"
+          viewBox="0 0 100 100"
+          aria-hidden="true"
+          focusable="false"
+        >
           <defs>
             <path
               id="circlePath"
@@ -85,6 +96,7 @@
           href="https://t.me/nara_web"
           class="footer-vebstudio-links"
           aria-label="Посилання на Телеграм від дизайнера проєкту."
+          rel="noopener noreferrer"
           target="_blank"
           >Designed by <span class="footer-link-container">Nara_Web</span></a
         >
@@ -94,6 +106,7 @@
           href="https://t.me/dmytry_samburenko"
           class="footer-vebstudio-links"
           aria-label="Посилання на Телеграм від розробників проєкту."
+          rel="noopener noreferrer"
           target="_blank"
           >Developed by
           <span class="footer-link-container">SL Digital Agency</span></a

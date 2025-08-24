@@ -37,6 +37,7 @@
                 width="26"
                 height="26"
                 aria-hidden="true"
+                focusable="false"
               >
                 <use
                   class="job-steps-tg-icon"
@@ -66,6 +67,7 @@
                 width="40"
                 height="40"
                 aria-hidden="true"
+                focusable="false"
               >
                 <use
                   class="job-steps-star-icon"
@@ -89,6 +91,7 @@
                 width="26"
                 height="26"
                 aria-hidden="true"
+                focusable="false"
               >
                 <use
                   class="job-steps-tg-icon"
@@ -125,6 +128,7 @@
                 width="26"
                 height="26"
                 aria-hidden="true"
+                focusable="false"
               >
                 <use
                   class="job-steps-tg-icon"
@@ -136,7 +140,14 @@
         </li>
       </ul>
       <div class="job-steps-video-container">
-        <video class="job-steps-video" autoplay loop muted playsinline>
+        <video
+          class="job-steps-video"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="metadata"
+        >
           <source src="./img/job-steps/job-steps.mp4" type="video/mp4" />
         </video>
       </div>
