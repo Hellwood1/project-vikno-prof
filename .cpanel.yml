@@ -2,11 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/viknopr1/public_html/git-control
-    - /bin/cp -R * $DEPLOYPATH
-
-
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/viknopr1/public_html/git-control
-    - /bin/cp -R folder $DEPLOYPATH
-    - /bin/cp file.name $DEPLOYPATH
+    - /bin/cp -R dist/* $DEPLOYPATH
