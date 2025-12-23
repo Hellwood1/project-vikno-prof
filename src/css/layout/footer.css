@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 42px;
-  margin: 0 auto 24px auto;
+  margin: 0 auto 32px auto;
 }
 
 .footer-social-media-list-item {
@@ -37,7 +37,8 @@
   text-align: center;
 }
 
-.footer-menu-icons {
+.footer-menu-icons,
+.footer-menu-second-icons {
   width: 28px;
   height: 28px;
   fill: white;
@@ -46,6 +47,10 @@
   border-radius: 48px;
 
   margin-bottom: 13px;
+}
+
+.footer-menu-second-icons {
+  background-color: #303030;
 }
 
 .footer-menu-icons {
@@ -60,6 +65,22 @@
 
 .footer-vebstudio-link-list {
   margin-bottom: 44px;
+}
+
+.footer-social-media-second-list {
+  display: flex;
+  width: 220px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  margin: 0 auto 24px auto;
+}
+
+.footer-social-media-second-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-vebstudio-links {
@@ -144,19 +165,29 @@
     width: 620px;
     justify-content: center;
     gap: 42px;
-    margin: 0 auto 34px auto;
+    margin: 0 auto 40px auto;
+  }
+
+  .footer-social-media-second-list {
+    min-width: 440px;
+    justify-content: space-around;
   }
 
   .footer-social-media-list-item {
     width: 160px;
   }
 
-  .footer-menu-icons {
+  .footer-menu-icons,
+  .footer-menu-second-icons {
     width: 38px;
     height: 38px;
     background-color: var(--white);
     padding: 12px;
     border-radius: 48px;
+  }
+
+  .footer-menu-second-icons {
+    background-color: #303030;
   }
 
   .footer-link-text {
@@ -170,6 +201,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    row-gap: 18px;
     margin-bottom: 30px;
   }
 
@@ -190,6 +222,10 @@
     column-gap: 62px;
   }
 
+  .footer-social-media-second-list {
+    min-width: 540px;
+    margin-bottom: 66px;
+  }
   .footer-btn-wrapper {
     position: absolute;
     right: 100px;
@@ -206,7 +242,10 @@
     background-color: var(--red);
   }
 
-  .footer-social-media-list-item .footer-social-media-link .footer-menu-icons {
+  .footer-social-media-list-item .footer-social-media-link .footer-menu-icons,
+  .footer-social-media-second-list-item
+    .footer-social-media-second-link
+    .footer-menu-second-icons {
     transition: transform 0.5s ease;
   }
 
@@ -218,6 +257,15 @@
     .footer-menu-icons {
     fill: var(--white);
     background-color: var(--red);
+    transform: scale(1.1);
+  }
+
+  .footer-social-media-second-list-item:hover
+    .footer-social-media-second-link
+    .footer-menu-second-icons,
+  .footer-social-media-second-list-item:focus
+    .footer-social-media-second-link
+    .footer-menu-second-icons {
     transform: scale(1.1);
   }
 }
