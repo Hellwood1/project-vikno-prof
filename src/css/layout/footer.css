@@ -267,5 +267,6 @@
     .footer-social-media-second-link
     .footer-menu-second-icons {
     transform: scale(1.1);
+    background-color: var(--red);
   }
 }
