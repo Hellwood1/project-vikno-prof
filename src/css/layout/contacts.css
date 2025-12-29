@@ -182,6 +182,7 @@
 }
 .messengers {
   display: flex;
+  justify-content: center;
   gap: 38px;
   margin-left: auto;
   margin-right: auto;
@@ -276,13 +277,17 @@
 
 /* Add social media icons and links */
 
+.contacts-social-media-wrapper {
+  margin: 0 auto;
+}
+
 .contacts-social-media-list {
   display: flex;
   width: 220px;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 22px;
+
   gap: 22px;
   margin: 24px auto 24px auto;
 }

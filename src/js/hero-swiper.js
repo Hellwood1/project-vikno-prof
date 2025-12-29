@@ -4,6 +4,7 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.hero-swiper-init', {
   allowTouchMove: true,
   slidesPerView: 'auto',
+   slidesOffsetAfter: 20,
   spaceBetween: 8,
   centeredSlides: false,
   a11y: { enabled: false }
