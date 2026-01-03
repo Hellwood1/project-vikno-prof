@@ -1,0 +1,118 @@
+.shorts-section {
+  padding-bottom: 90px;
+}
+
+.shorts-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.shorts-title span {
+  text-transform: uppercase;
+}
+
+.shorts-pre-title {
+  color: var(--gray);
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.shorts-section .shorts-card-wrapper {
+  aspect-ratio: 9 / 16;
+  width: 278px;
+  height: 496px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  background: var(--black);
+}
+
+.shorts-section .shorts-card-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.shorts-card-wrapper {
+  border-radius: 24px;
+}
+
+.shorts-swiper {
+  margin-bottom: 32px;
+}
+
+.shorts-right-arrow-btn,
+.shorts-left-arrow-btn {
+  width: 48px;
+  height: 48px;
+  background-color: var(--red);
+  border-radius: 50px;
+  border: none;
+  padding: 9px 16px;
+}
+
+.shorts-swiper-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 60px;
+}
+
+.shorts-left-arrow-btn:hover,
+.shorts-right-arrow-btn:hover,
+.shorts-left-arrow-btn:focus,
+.shorts-right-arrow-btn:focus {
+  background-color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.shorts-right-arrow-btn:hover .testimonials-svg,
+.shorts-left-arrow-btn:hover .testimonials-svg,
+.shorts-right-arrow-btn:focus .testimonials-svg,
+.shorts-left-arrow-btn:focus .testimonials-svg {
+  --color1: var(--red);
+}
+
+iframe {
+  border: none;
+}
+
+/* ======================TABLET================ */
+
+@media screen and (min-width: 768px) {
+  .shorts-swiper-init .swiper-wrapper {
+    width: 100%;
+  }
+
+  .shorts-title {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+
+  .shorts-pre-title {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 48px;
+  }
+
+  .shorts-section .shorts-card-wrapper {
+    width: 248px;
+  }
+}
+
+/* ======================DESKTOP 1440px================ */
+
+@media screen and (min-width: 1440px) {
+  .shorts-pre-title {
+    margin-bottom: 60px;
+  }
+
+  .shorts-swiper-init .swiper-wrapper {
+    margin-bottom: 48px;
+  }
+}

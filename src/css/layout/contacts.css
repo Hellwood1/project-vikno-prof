@@ -28,7 +28,7 @@
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  line-height: normal;
+
   text-transform: uppercase;
 }
 .title-row {
@@ -138,7 +138,6 @@
 .tg-btn:focus-within .messenger-text,
 .viber-btn:hover .messenger-text,
 .viber-btn:focus-within .messenger-text {
-  color: var(--red);
   transition: all 0.3s ease;
 }
 .contact-desk-position {
@@ -210,14 +209,13 @@
   font-size: 30px;
 
   font-weight: 700;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2;
   letter-spacing: -0.6px;
   margin-bottom: 28px;
 }
 .contact-second-p1 {
   color: var(--white);
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.2;
   width: 279px;
@@ -226,7 +224,7 @@
 .contact-second-p2 {
   color: var(--white);
   font-size: 20px;
-  font-style: normal;
+
   font-weight: 500;
   line-height: 1.2;
   width: 267px;
@@ -434,8 +432,6 @@
     left: 30%;
     bottom: -13%;
   }
-
-  /*  */
 
   .contacts-social-media-list {
     position: absolute;
