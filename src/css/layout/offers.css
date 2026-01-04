@@ -71,7 +71,6 @@
 .offers-card-title {
   color: var(--black);
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.23;
   letter-spacing: -0.52px;
@@ -173,9 +172,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .offers-section {
-    margin-bottom: 120px;
-  }
   .offers-header {
     margin-bottom: 110px;
   }

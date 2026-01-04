@@ -1,0 +1,258 @@
+.prices-section {
+  padding-bottom: 90px;
+}
+
+.prices-title {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.prices-pre-title {
+  color: var(--gray);
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.64;
+  margin-bottom: 106px;
+}
+
+.prices-bg-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* Кнопка з посиланням на Telegram bot */
+
+.prices-circle-btn {
+  position: absolute;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  left: 96px;
+  bottom: 360px;
+  text-transform: uppercase;
+}
+
+.prices-circle-btn-arrow {
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+.prices-text-circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+  transition: transform 4s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.prices-circle-btn:hover .prices-text-circle,
+.prices-circle-btn:focus .prices-text-circle {
+  animation: spin 6s linear infinite;
+}
+
+.prices-background {
+  border-radius: 40px;
+  height: 428px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: image-set(
+    url(../../img/prices/prices-mobile@1x.jpg) 1x,
+    url(../../img/prices/prices-mobile@2x.jpg) 2x
+  );
+}
+
+.prices-text-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.prices-text-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prices-text-list-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.prices-points-first-part {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+}
+
+.prices-points-second-part {
+  display: none;
+}
+
+.prices-text-list-item-wrapper dt {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+
+.prices-text-list > .prices-text-list-item:nth-last-child(1) {
+  justify-content: space-between;
+}
+
+.prices-text-list
+  > .prices-text-list-item:nth-last-child(1)
+  > .prices-text-list-item-wrapper {
+  height: 170px;
+}
+
+.prices-text-list
+  > .prices-text-list-item:nth-last-child(1)
+  > .prices-text-list-item-wrapper
+  > dt {
+  width: 203px;
+}
+
+.prices-text-list
+  > .prices-text-list-item
+  > .prices-text-list-item-wrapper
+  > dd {
+  line-height: 1.55;
+}
+
+.prices-telegram-link {
+  line-height: 1.44;
+  letter-spacing: 0.01em;
+  text-decoration-line: underline;
+}
+
+.prices-telegram-link:hover,
+.prices-telegram-link:focus {
+  color: var(--red);
+}
+
+/* ======================TABLET================ */
+
+@media screen and (min-width: 768px) {
+  .prices-section {
+    padding-bottom: 110px;
+  }
+
+  .prices-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-bottom: 12px;
+  }
+
+  .prices-pre-title {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.55;
+    margin-bottom: 126px;
+  }
+
+  .prices-bg-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .prices-circle-btn {
+    left: 40%;
+    top: -8%;
+  }
+
+  .prices-text-list-item {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .prices-text-list-item-wrapper dt {
+    font-size: 26px;
+    line-height: 1.23;
+  }
+
+  .prices-points-first-part,
+  .prices-points-second-part {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+
+  .prices-text-list
+    > .prices-text-list-item:nth-last-child(1)
+    > .prices-text-list-item-wrapper {
+    height: 100%;
+  }
+
+  .prices-text-list
+    > .prices-text-list-item:nth-last-child(1)
+    > .prices-text-list-item-wrapper
+    > dt {
+    width: 100%;
+  }
+
+  .prices-background {
+    height: 860px;
+    background-image: image-set(
+      url(../../img/prices/prices-tablet@1x.jpg) 1x,
+      url(../../img/prices/prices-tablet@2x.jpg) 2x
+    );
+  }
+}
+
+/* ======================DESKTOP 1440px================ */
+
+@media screen and (min-width: 1440px) {
+  .prices-section {
+    padding-bottom: 70px;
+  }
+
+  .prices-content-wrapper {
+    display: flex;
+    column-gap: 86px;
+  }
+
+  .prices-bg-wrapper {
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+
+  .prices-text-list-item {
+    column-gap: 98px;
+  }
+
+  .prices-circle-btn {
+    left: 38%;
+    top: -6%;
+  }
+
+  .prices-background {
+    height: 704px;
+    width: 561px;
+    background-image: image-set(
+      url(../../img/prices/prices-desktop@1x.jpg) 1x,
+      url(../../img/prices/prices-desktop@2x.jpg) 2x
+    );
+  }
+}

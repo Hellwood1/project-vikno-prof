@@ -64,6 +64,11 @@ a {
   outline: none;
 }
 
+dd,
+dt {
+  margin: 0;
+}
+
 .accent-color {
   color: var(--red);
 }
