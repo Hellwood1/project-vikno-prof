@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home3/viknopr1/public_html
+    - export DEPLOYPATH=/home3/viknopr1/public_html/project-vikno-prof
     - /bin/cp -R dist/* $DEPLOYPATH
