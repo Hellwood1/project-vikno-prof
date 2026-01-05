@@ -122,24 +122,22 @@
   gap: 6px;
 }
 
-.phone-btn:hover svg,
-.phone-btn:focus-within svg,
-.tg-btn:hover svg,
-.tg-btn:focus-within svg,
-.viber-btn:hover svg,
-.viber-btn:focus-within svg {
-  fill: var(--red);
-  transition: all 0.3s ease;
+.phone-btn .messenger-svg,
+.tg-btn .messenger-svg,
+.viber-btn .messenger-svg {
+  transition: transform 0.5s ease;
 }
 
-.phone-btn:hover .phone-text,
-.phone-btn:focus-within .phone-text,
-.tg-btn:hover .messenger-text,
-.tg-btn:focus-within .messenger-text,
-.viber-btn:hover .messenger-text,
-.viber-btn:focus-within .messenger-text {
-  transition: all 0.3s ease;
+.phone-btn:hover .messenger-svg,
+.tg-btn:hover .messenger-svg,
+.viber-btn:hover .messenger-svg,
+.phone-btn:focus .messenger-svg,
+.tg-btn:focus .messenger-svg,
+.viber-btn:focus .messenger-svg {
+  fill: var(--red);
+  transform: scale(1.1);
 }
+
 .contact-desk-position {
   margin-left: auto;
   margin-right: auto;

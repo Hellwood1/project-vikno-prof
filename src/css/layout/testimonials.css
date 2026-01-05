@@ -82,6 +82,26 @@
   .card-wrapper {
     padding: 24px;
   }
+
+  .left-arrow-btn,
+  .right-arrow-btn {
+    transition: transform 0.5s ease;
+  }
+
+  .left-arrow-btn:hover,
+  .right-arrow-btn:hover,
+  .left-arrow-btn:focus,
+  .right-arrow-btn:focus {
+    background-color: var(--white);
+    transform: scale(1.1);
+  }
+
+  .right-arrow-btn:hover .testimonials-svg,
+  .left-arrow-btn:hover .testimonials-svg,
+  .right-arrow-btn:focus .testimonials-svg,
+  .left-arrow-btn:focus .testimonials-svg {
+    --color1: var(--red);
+  }
 }
 
 /* ======================DESKTOP 1440px================ */
@@ -111,20 +131,5 @@
 
   .right-arrow-btn {
     justify-content: flex-end;
-  }
-
-  .left-arrow-btn:hover,
-  .right-arrow-btn:hover,
-  .left-arrow-btn:focus,
-  .right-arrow-btn:focus {
-    background-color: var(--white);
-    transition: all 0.3s ease;
-  }
-
-  .right-arrow-btn:hover .testimonials-svg,
-  .left-arrow-btn:hover .testimonials-svg,
-  .right-arrow-btn:focus .testimonials-svg,
-  .left-arrow-btn:focus .testimonials-svg {
-    --color1: var(--red);
   }
 }

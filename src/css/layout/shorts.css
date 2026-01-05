@@ -63,12 +63,17 @@
   column-gap: 60px;
 }
 
+.shorts-left-arrow-btn,
+.shorts-right-arrow-btn {
+  transition: transform 0.5s ease;
+}
+
 .shorts-left-arrow-btn:hover,
 .shorts-right-arrow-btn:hover,
 .shorts-left-arrow-btn:focus,
 .shorts-right-arrow-btn:focus {
   background-color: var(--white);
-  transition: all 0.3s ease;
+  transform: scale(1.1);
 }
 
 .shorts-right-arrow-btn:hover .testimonials-svg,
@@ -114,5 +119,9 @@ iframe {
 
   .shorts-swiper-init .swiper-wrapper {
     margin-bottom: 48px;
+  }
+
+  .shorts-swiper-btn-wrapper {
+    column-gap: 114px;
   }
 }
