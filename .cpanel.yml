@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/viknopr1/public_html
-    - /bin/rsync -a --delete dist/ $DEPLOYPATH
+    - /bin/cp -R dist/* $DEPLOYPATH
