@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/viknopr1/public_html/git-control
+    - export DEPLOYPATH=/home/viknopr1/public_html
     - /bin/cp -R dist/* $DEPLOYPATH
